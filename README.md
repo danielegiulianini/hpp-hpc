@@ -7,7 +7,7 @@ In particular, the repository contains:
 - A parallel version utilizing a distributed memory model with Open MPI, exploiting synchronous MPI_SendRecv routines for communication between processes.
 - A parallel version based on a distributed memory model with Open MPI, replacing MPI_SendRecv calls with MPI_Isend and MPI_Irecv asynchronous routines to further reduce communication overhead and improve performance.
 
-The solutions are not reimplementations of the same solution strategy, but provide 3 different ways to tackle the problem.
+The versions are not reimplementations of the same solution strategy, but provide 3 different ways to tackle the problem.
 
 
 ## Techs
