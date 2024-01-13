@@ -55,7 +55,7 @@ To ease deployment and make it platform-independent, this repository includes a 
 
 **Optional: configure the simulation parameters:**
 - n. of threads/processes executing (default: 2);
-- Input image (default: cannon.in; alternative: box.in)
+- Input image (default: cannon.in; alternative: box.in or walls.in)
 - image size (default: 256 pixels);
 by passing the corresponding key-value pairs to make ("[" and "]" just stands for optionality): 
 
