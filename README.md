@@ -76,9 +76,15 @@ by passing the corresponding key-value pairs to make ("[" and "]" just stands fo
     make all-movies [EXECUTION_UNITS=4 MOVIE_SIZE=512 INPUT_FILE=cannon.in]
 ```
 
+1. When you finish operating, exit from the container in interactive mode:
+
+```bash
+    exit
+```
+
 1. Finally, free up the resources associated to the container:
 
 ```bash
-    docker remove <container-name>
+    docker rm <container-name>
 ```
 
