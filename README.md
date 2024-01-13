@@ -13,6 +13,7 @@ C, OpenMP, Open MPI
 
 
 ## Documentation
+The solution strategy adopted is explained in the comments along with the code.
 Contact me for further documentation.
 
 
