@@ -11,7 +11,7 @@ The versions are not reimplementations of the same solution strategy, but provid
 
 
 ## Techs
-C, OpenMP, Open MPI
+C, OpenMP, Open MPI, Docker.
 
 
 ## Documentation
