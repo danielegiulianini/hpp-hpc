@@ -43,7 +43,7 @@ To ease deployment and make it platform-independent, this repository includes a 
     docker build -t hpp-hpc .
 ```
 
-1. Start the container from the created image (implying source compilation) giving it a custom name (to be replaced to "<container-name>" below):
+1. Start the container from the created image (implying source compilation) giving it a custom name (replacing &lt;container-name&gt; with it):
 
 ```bash
     docker run -it --name <container-name> hpp-hpc
@@ -52,10 +52,9 @@ To ease deployment and make it platform-independent, this repository includes a 
 
 
 1. Run the parallel programs and generate the animations of the HPP cellular automaton.
-
 **Optional: configure the simulation parameters:**
 - n. of threads/processes executing (default: 2);
-- Input image (default: cannon.in; alternative: box.in or walls.in)
+- Input image (default: cannon.in; alternative: box.in)
 - image size (default: 256 pixels);
 by passing the corresponding key-value pairs to make ("[" and "]" just stands for optionality): 
 
@@ -76,15 +75,9 @@ by passing the corresponding key-value pairs to make ("[" and "]" just stands fo
     make all-movies [EXECUTION_UNITS=4 MOVIE_SIZE=512 INPUT_FILE=cannon.in]
 ```
 
-1. When you finish operating, exit from the container in interactive mode:
-
-```bash
-    exit
-```
-
 1. Finally, free up the resources associated to the container:
 
 ```bash
-    docker rm <container-name>
+    docker remove <container-name>
 ```
 
